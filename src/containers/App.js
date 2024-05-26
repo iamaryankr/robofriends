@@ -44,7 +44,10 @@ class App extends React.Component {
                     <SearchBox searchChange = {this.onSearchChange}/>
                     <Scroll>
                         <ErrorBoundary>
-                            <CardList robots={filteredRobots}/>
+                            {filteredRobots.length > 0 
+                                ? <CardList robots={filteredRobots} />
+                                : <h2>No Robots Found!</h2>
+                            }
                         </ErrorBoundary>
                     </Scroll>
                     
