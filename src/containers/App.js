@@ -46,7 +46,7 @@ class App extends React.Component {
                         <ErrorBoundary>
                             {filteredRobots.length > 0 
                                 ? <CardList robots={filteredRobots} />
-                                : <h2>No Robots Found!</h2>
+                                : <h2 className='f1'>No Robots Found!</h2>
                             }
                         </ErrorBoundary>
                     </Scroll>
