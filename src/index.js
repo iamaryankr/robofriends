@@ -1,14 +1,19 @@
-import React from 'react';
+import React from "react";
+import Card from "./components/Card";
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {robots} from "./robots";
+import CardList from './components/CardList';
+import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 
+import 'tachyons'; //to use css in JSX
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <App/>
+  </div>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
