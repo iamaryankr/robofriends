@@ -6,3 +6,5 @@ my first ever react project
 -> npm install
 
 -> npm start
+
+or just use the deployment link!
